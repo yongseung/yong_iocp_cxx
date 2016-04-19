@@ -1,0 +1,45 @@
+#ifndef _PROTOCOL_H_
+#define _PROTOCOL_H_
+
+
+enum
+{
+	REQUEST_LOGIN = 0,
+	//
+
+	REQUEST_INITIALIZE,
+	//
+
+	REQUEST_INITIALIZE_NEXT,
+	// 내부 호출
+
+	NOTIFY_USERLIST,
+	//
+
+	REQUEST_CHANGE_CHANNEL,
+	// 
+
+	REQUEST_CHANGE_CHANNEL_NEXT,
+	// 내부에서 호출됨
+
+	REQUEST_CHAT,
+	//
+
+	REQUEST_LOGOUT_NEXT,
+	//내부에서 호출됨
+
+	ANSWER_INIT,
+
+	ANSWER_NOTIFY_USERLIST,
+
+	ANSWER_LOGIN,
+
+	REQUEST_LOGOUT,
+
+	ANSWER_LOGOUT
+
+
+};
+
+
+#endif
